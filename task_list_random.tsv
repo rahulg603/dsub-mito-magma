@@ -1,0 +1,6 @@
+--env SUMMARY	--env FOLD
+G6_INTRACRATRAUMA.gwas.imputed_v3.both_sexes.tsv	tsk1
+F5_PERSONALITY.gwas.imputed_v3.both_sexes.tsv	tsk2
+J43.gwas.imputed_v3.both_sexes.tsv	tsk3
+R40.gwas.imputed_v3.both_sexes.tsv	tsk4
+C3_OESOPHAGUS.gwas.imputed_v3.both_sexes.tsv	tsk5

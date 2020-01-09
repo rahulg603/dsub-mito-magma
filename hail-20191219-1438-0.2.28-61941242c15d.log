@@ -1,0 +1,748 @@
+2019-12-19 14:38:05 Hail: WARN: This Hail JAR was compiled for Spark 2.4.0, running with Spark 2.4.1.
+  Compatibility is not guaranteed.
+2019-12-19 14:38:05 SparkContext: INFO: Running Spark version 2.4.1
+2019-12-19 14:38:05 SparkContext: INFO: Submitted application: Hail
+2019-12-19 14:38:05 SparkContext: INFO: Spark configuration:
+spark.app.name=Hail
+spark.driver.extraClassPath=/Users/rahulgupta/.pyenv/versions/3.7.0/envs/11-25-19_test_hail_env/lib/python3.7/site-packages/hail/hail-all-spark.jar
+spark.executor.extraClassPath=./hail-all-spark.jar
+spark.hadoop.io.compression.codecs=org.apache.hadoop.io.compress.DefaultCodec,is.hail.io.compress.BGzipCodec,is.hail.io.compress.BGzipCodecTbi,org.apache.hadoop.io.compress.GzipCodec
+spark.hadoop.mapreduce.input.fileinputformat.split.minsize=0
+spark.jars=file:///Users/rahulgupta/.pyenv/versions/3.7.0/envs/11-25-19_test_hail_env/lib/python3.7/site-packages/hail/hail-all-spark.jar
+spark.kryo.registrator=is.hail.kryo.HailKryoRegistrator
+spark.logConf=true
+spark.master=local[*]
+spark.repl.local.jars=file:///Users/rahulgupta/.pyenv/versions/3.7.0/envs/11-25-19_test_hail_env/lib/python3.7/site-packages/hail/hail-all-spark.jar
+spark.serializer=org.apache.spark.serializer.KryoSerializer
+spark.submit.deployMode=client
+spark.ui.showConsoleProgress=false
+2019-12-19 14:38:05 SecurityManager: INFO: Changing view acls to: rahulgupta
+2019-12-19 14:38:05 SecurityManager: INFO: Changing modify acls to: rahulgupta
+2019-12-19 14:38:05 SecurityManager: INFO: Changing view acls groups to: 
+2019-12-19 14:38:05 SecurityManager: INFO: Changing modify acls groups to: 
+2019-12-19 14:38:05 SecurityManager: INFO: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(rahulgupta); groups with view permissions: Set(); users  with modify permissions: Set(rahulgupta); groups with modify permissions: Set()
+2019-12-19 14:38:06 Utils: INFO: Successfully started service 'sparkDriver' on port 64356.
+2019-12-19 14:38:06 SparkEnv: INFO: Registering MapOutputTracker
+2019-12-19 14:38:06 SparkEnv: INFO: Registering BlockManagerMaster
+2019-12-19 14:38:06 BlockManagerMasterEndpoint: INFO: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-12-19 14:38:06 BlockManagerMasterEndpoint: INFO: BlockManagerMasterEndpoint up
+2019-12-19 14:38:06 DiskBlockManager: INFO: Created local directory at /private/var/folders/7z/md6hdwyj7tv7dbh014y1wpv00000gn/T/blockmgr-ffadb0f7-0002-43f0-85da-c740b378c5bc
+2019-12-19 14:38:06 MemoryStore: INFO: MemoryStore started with capacity 366.3 MB
+2019-12-19 14:38:06 SparkEnv: INFO: Registering OutputCommitCoordinator
+2019-12-19 14:38:06 log: INFO: Logging initialized @2120ms
+2019-12-19 14:38:06 Server: INFO: jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2019-12-19 14:38:06 Server: INFO: Started @2197ms
+2019-12-19 14:38:06 Utils: WARN: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2019-12-19 14:38:06 AbstractConnector: INFO: Started ServerConnector@208c8e09{HTTP/1.1,[http/1.1]}{0.0.0.0:4041}
+2019-12-19 14:38:06 Utils: INFO: Successfully started service 'SparkUI' on port 4041.
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@21cd300f{/jobs,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@78e52c73{/jobs/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@3c77cfc6{/jobs/job,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@783531a3{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@29621c62{/stages,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@2be9ef77{/stages/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@6887c5fa{/stages/stage,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@64a01619{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@325eb762{/stages/pool,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@79b05d10{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@4f49c6ce{/storage,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@2bbd01e0{/storage/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@6c1f5652{/storage/rdd,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@173cce1c{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@16421583{/environment,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@55b3b4aa{/environment/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@4308c588{/executors,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@3235bfdb{/executors/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@345d4a13{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@7c03bed6{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@79a2105b{/static,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@1322ecc8{/,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@173f8d62{/api,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@1ddaec72{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@1a30d422{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 SparkUI: INFO: Bound SparkUI to 0.0.0.0, and started at http://192.168.1.28:4041
+2019-12-19 14:38:06 SparkContext: INFO: Added JAR file:///Users/rahulgupta/.pyenv/versions/3.7.0/envs/11-25-19_test_hail_env/lib/python3.7/site-packages/hail/hail-all-spark.jar at spark://192.168.1.28:64356/jars/hail-all-spark.jar with timestamp 1576784286517
+2019-12-19 14:38:06 Executor: INFO: Starting executor ID driver on host localhost
+2019-12-19 14:38:06 Utils: INFO: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 64357.
+2019-12-19 14:38:06 NettyBlockTransferService: INFO: Server created on 192.168.1.28:64357
+2019-12-19 14:38:06 BlockManager: INFO: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-12-19 14:38:06 BlockManagerMaster: INFO: Registering BlockManager BlockManagerId(driver, 192.168.1.28, 64357, None)
+2019-12-19 14:38:06 BlockManagerMasterEndpoint: INFO: Registering block manager 192.168.1.28:64357 with 366.3 MB RAM, BlockManagerId(driver, 192.168.1.28, 64357, None)
+2019-12-19 14:38:06 BlockManagerMaster: INFO: Registered BlockManager BlockManagerId(driver, 192.168.1.28, 64357, None)
+2019-12-19 14:38:06 BlockManager: INFO: Initialized BlockManager: BlockManagerId(driver, 192.168.1.28, 64357, None)
+2019-12-19 14:38:06 ContextHandler: INFO: Started o.s.j.s.ServletContextHandler@6f6530cd{/metrics/json,null,AVAILABLE,@Spark}
+2019-12-19 14:38:06 Hail: INFO: Hail temporary directory: file:/tmp/hail.g5Rx9RKEM7jQ
+2019-12-19 14:38:06 Hail: INFO: SparkUI: http://192.168.1.28:4041
+2019-12-19 14:38:06 Hail: INFO: Running Hail version 0.2.28-61941242c15d
+2019-12-19 14:38:07 SparkContext: WARN: Using an existing SparkContext; some configuration may not take effect.
+2019-12-19 14:38:43 root: INFO: RegionPool: initialized for thread 15: Thread-4
+2019-12-19 14:38:43 root: INFO: optimize Lowerer, initial IR: before: IR size 2: 
+(TableKeyBy () False
+  (TableRange 1 1))
+2019-12-19 14:38:43 root: INFO: Timer: Time taken for Optimize -- FoldConstants : 3.197ms, total 37.029ms
+2019-12-19 14:38:43 root: INFO: Timer: Time taken for Optimize -- ExtractIntervalFilters : 1.919ms, total 40.204ms
+2019-12-19 14:38:43 root: INFO: Timer: Time taken for Optimize -- Simplify : 4.647ms, total 45.296ms
+2019-12-19 14:38:43 root: INFO: Timer: Time taken for Optimize -- ForwardLets : 4.125ms, total 49.812ms
+2019-12-19 14:38:43 root: INFO: Timer: Time taken for Optimize -- ForwardRelationalLets : 1.263ms, total 51.431ms
+2019-12-19 14:38:43 root: INFO: Timer: Time taken for Optimize -- PruneDeadFields : 11.747ms, total 63.576ms
+2019-12-19 14:38:43 root: INFO: Timer: Time taken for Optimize : 30.356ms, total 63.886ms, tagged coverage 88.6
+2019-12-19 14:38:43 root: INFO: optimize Lowerer, initial IR: after: IR size 2:
+(TableKeyBy () False
+  (TableRange 1 1))
+2019-12-19 14:38:43 root: INFO: Timer: Time taken for LowerMatrixToTable -- Verify : 0.301ms, total 65.513ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for LowerMatrixToTable -- LoweringTransformation : 6.997ms, total 72.842ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for LowerMatrixToTable -- Verify : 0.043ms, total 73.384ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for LowerMatrixToTable : 8.479ms, total 73.547ms, tagged coverage 86.6
+2019-12-19 14:38:44 root: INFO: optimize LowerMatrixToTable, post Lowering: before: IR size 2: 
+(TableKeyBy () False
+  (TableRange 1 1))
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- FoldConstants : 0.094ms, total 74.124ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- ExtractIntervalFilters : 0.161ms, total 74.451ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- Simplify : 0.046ms, total 74.646ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- ForwardLets : 0.256ms, total 75.040ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- ForwardRelationalLets : 0.022ms, total 75.206ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- PruneDeadFields : 0.312ms, total 75.694ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize : 1.877ms, total 75.894ms, tagged coverage 47.5
+2019-12-19 14:38:44 root: INFO: optimize LowerMatrixToTable, post Lowering: after: IR size 2:
+(TableKeyBy () False
+  (TableRange 1 1))
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for InterpretNonCompilable -- Verify : 0.014ms, total 76.261ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for InterpretNonCompilable -- LoweringTransformation : 1.323ms, total 77.804ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for InterpretNonCompilable -- Verify : 0.027ms, total 78.070ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for InterpretNonCompilable : 2.003ms, total 78.243ms, tagged coverage 68.1
+2019-12-19 14:38:44 root: INFO: optimize InterpretNonCompilable, post Lowering: before: IR size 2: 
+(TableKeyBy () False
+  (TableRange 1 1))
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- FoldConstants : 0.059ms, total 78.643ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- ExtractIntervalFilters : 0.168ms, total 78.988ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- Simplify : 0.063ms, total 79.198ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- ForwardLets : 0.246ms, total 79.580ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- ForwardRelationalLets : 0.022ms, total 79.744ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize -- PruneDeadFields : 0.317ms, total 80.185ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for Optimize : 1.870ms, total 80.447ms, tagged coverage 46.8
+2019-12-19 14:38:44 root: INFO: optimize InterpretNonCompilable, post Lowering: after: IR size 2:
+(TableKeyBy () False
+  (TableRange 1 1))
+2019-12-19 14:38:44 root: INFO: encoder cache miss (0 hits, 1 misses, 0.000)
+2019-12-19 14:38:44 root: INFO: instruction count: 3: is/hail/codegen/generated/C_etypeEncode_0.<init>
+2019-12-19 14:38:44 root: INFO: instruction count: 7: is/hail/codegen/generated/C_etypeEncode_0.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 7: is/hail/codegen/generated/C_etypeEncode_0.m0_ENCODE_o_tuple_of_END_TO_o_struct_of_END
+2019-12-19 14:38:44 root: INFO: optimize Lowerer, initial IR: before: IR size 50: 
+(GetField rows
+  (TableCollect
+    (TableHead 11
+      (TableMapRows
+        (TableMapRows
+          (TableOrderBy ()
+            (TableMapRows
+              (TableLiteral)
+              (InsertFields
+                (SelectFields ()
+                  (SelectFields (idx)
+                    (Ref row)))
+                None
+                (`<expr>`
+                  (ApplyUnaryPrimOp BitNot
+                    (Apply toInt32 Int32
+                      (False)))))))
+          (Let __cse_1
+            (Ref row)
+            (InsertFields
+              (SelectFields ()
+                (SelectFields (`<expr>`)
+                  (Ref __cse_1)))
+              None
+              (`<expr>`
+                (GetField `<expr>`
+                  (Ref __cse_1))))))
+        (Let __cse_2
+          (Ref row)
+          (InsertFields
+            (SelectFields ()
+              (SelectFields (`<expr>`)
+                (Ref __cse_2)))
+            None
+            (`<expr>`
+              (Let __uid_3
+                (If
+                  (ApplyUnaryPrimOp Bang
+                    (IsNA
+                      (GetField `<expr>`
+                        (Ref __cse_2))))
+                  (Apply str String
+                    (GetField `<expr>`
+                      (Ref row)))
+                  (Str "NA"))
+                (If
+                  (ApplyComparisonOp GT
+                    (Apply length Int32
+                      (Ref __uid_3))
+                    (I32 90))
+                  (Apply `+` String
+                    (ApplyIR `[:*]` String
+                      (Ref __uid_3)
+                      (I32 87))
+                    (Str "..."))
+                  (Ref __uid_3))))))))))
+2019-12-19 14:38:44 root: INFO: instruction count: 3: is/hail/codegen/generated/C1.<init>
+2019-12-19 14:38:44 root: INFO: instruction count: 81: is/hail/codegen/generated/C1.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 16: is/hail/codegen/generated/C1.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 4: is/hail/codegen/generated/C1.m1_method
+2019-12-19 14:38:44 root: INFO: instruction count: 14: is/hail/codegen/generated/C1.setPartitionIndex
+2019-12-19 14:38:44 root: INFO: instruction count: 6: is/hail/codegen/generated/C1.addPartitionRegion
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 52.243ms, total 57.330ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 1.362ms, total 58.933ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 11.425ms, total 70.546ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 8.200ms, total 79.129ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.325ms, total 79.678ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 12.981ms, total 92.816ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.515ms, total 93.535ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 3.221ms, total 96.909ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 7.524ms, total 104.627ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 2.908ms, total 107.778ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.343ms, total 108.354ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 2.697ms, total 111.237ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.318ms, total 111.826ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.736ms, total 112.721ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.639ms, total 113.508ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 2.879ms, total 116.537ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.639ms, total 117.405ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 2.393ms, total 120.018ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize : 115.115ms, total 120.186ms, tagged coverage 96.7
+2019-12-19 14:38:44 root: INFO: optimize Lowerer, initial IR: after: IR size 36:
+(GetField rows
+  (TableCollect
+    (TableMapRows
+      (TableHead 11
+        (TableOrderBy ()
+          (TableMapRows
+            (TableLiteral)
+            (InsertFields
+              (SelectFields ()
+                (Ref row))
+              None
+              (`<expr>`
+                (I32 -1))))))
+      (Let __iruid_82
+        (GetField `<expr>`
+          (Ref row))
+        (InsertFields
+          (SelectFields ()
+            (Ref row))
+          None
+          (`<expr>`
+            (Let __iruid_83
+              (If
+                (IsNA
+                  (Ref __iruid_82))
+                (Str "NA")
+                (Apply str String
+                  (Ref __iruid_82)))
+              (If
+                (ApplyComparisonOp GT
+                  (Apply length Int32
+                    (Ref __iruid_83))
+                  (I32 90))
+                (Apply `+` String
+                  (ApplyIR `[*:*]` String
+                    (Ref __iruid_83)
+                    (I32 0)
+                    (I32 87))
+                  (Str "..."))
+                (Ref __iruid_83)))))))))
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- LowerMatrixToTable -- Verify : 0.034ms, total 122.092ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- LowerMatrixToTable -- LoweringTransformation : 0.430ms, total 122.663ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- LowerMatrixToTable -- Verify : 0.062ms, total 122.860ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- LowerMatrixToTable : 0.928ms, total 122.983ms, tagged coverage 56.6
+2019-12-19 14:38:44 root: INFO: optimize LowerMatrixToTable, post Lowering: before: IR size 36: 
+(GetField rows
+  (TableCollect
+    (TableMapRows
+      (TableHead 11
+        (TableOrderBy ()
+          (TableMapRows
+            (TableLiteral)
+            (InsertFields
+              (SelectFields ()
+                (Ref row))
+              None
+              (`<expr>`
+                (I32 -1))))))
+      (Let __iruid_82
+        (GetField `<expr>`
+          (Ref row))
+        (InsertFields
+          (SelectFields ()
+            (Ref row))
+          None
+          (`<expr>`
+            (Let __iruid_83
+              (If
+                (IsNA
+                  (Ref __iruid_82))
+                (Str "NA")
+                (Apply str String
+                  (Ref __iruid_82)))
+              (If
+                (ApplyComparisonOp GT
+                  (Apply length Int32
+                    (Ref __iruid_83))
+                  (I32 90))
+                (Apply `+` String
+                  (ApplyIR `[*:*]` String
+                    (Ref __iruid_83)
+                    (I32 0)
+                    (I32 87))
+                  (Str "..."))
+                (Ref __iruid_83)))))))))
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.165ms, total 124.724ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.757ms, total 125.631ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.581ms, total 126.374ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 2.878ms, total 129.405ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.416ms, total 130.027ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 4.873ms, total 135.098ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.282ms, total 135.590ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.754ms, total 136.473ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.670ms, total 137.445ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 3.722ms, total 141.400ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.281ms, total 141.909ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 2.250ms, total 144.311ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.319ms, total 144.880ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.644ms, total 145.667ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.613ms, total 146.428ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 2.466ms, total 149.029ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.282ms, total 149.484ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 2.149ms, total 151.765ms
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize : 27.379ms, total 151.931ms, tagged coverage 88.0
+2019-12-19 14:38:44 root: INFO: optimize LowerMatrixToTable, post Lowering: after: IR size 36:
+(GetField rows
+  (TableCollect
+    (TableMapRows
+      (TableHead 11
+        (TableOrderBy ()
+          (TableMapRows
+            (TableLiteral)
+            (InsertFields
+              (SelectFields ()
+                (Ref row))
+              None
+              (`<expr>`
+                (I32 -1))))))
+      (Let __iruid_160
+        (GetField `<expr>`
+          (Ref row))
+        (InsertFields
+          (SelectFields ()
+            (Ref row))
+          None
+          (`<expr>`
+            (Let __iruid_161
+              (If
+                (IsNA
+                  (Ref __iruid_160))
+                (Str "NA")
+                (Apply str String
+                  (Ref __iruid_160)))
+              (If
+                (ApplyComparisonOp GT
+                  (Apply length Int32
+                    (Ref __iruid_161))
+                  (I32 90))
+                (Apply `+` String
+                  (ApplyIR `[*:*]` String
+                    (Ref __iruid_161)
+                    (I32 0)
+                    (I32 87))
+                  (Str "..."))
+                (Ref __iruid_161)))))))))
+2019-12-19 14:38:44 root: INFO: Timer: Time taken for CompileAndEvaluate -- InterpretNonCompilable -- Verify : 0.042ms, total 153.601ms
+2019-12-19 14:38:44 root: INFO: interpreting non compilable node: TableCollect
+2019-12-19 14:38:44 root: INFO: decoder cache miss (0 hits, 1 misses, 0.000
+2019-12-19 14:38:44 root: INFO: instruction count: 3: is/hail/codegen/generated/C_etypeDecode_2.<init>
+2019-12-19 14:38:44 root: INFO: instruction count: 7: is/hail/codegen/generated/C_etypeDecode_2.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 14: is/hail/codegen/generated/C_etypeDecode_2.m0_DECODE_o_struct_of_END_TO_o_tuple_of_END
+2019-12-19 14:38:44 root: INFO: couldn't lower TableMapRows: is.hail.expr.ir.agg.UnsupportedExtraction: no scans to extract in TableMapRows
+2019-12-19 14:38:44 root: INFO: initop (Begin)
+2019-12-19 14:38:44 root: INFO: optimize Compile: before: IR size 1: 
+(Begin)
+2019-12-19 14:38:44 root: INFO: optimize Compile: after: IR size 1:
+(Begin)
+2019-12-19 14:38:44 root: INFO: instruction count: 3: is/hail/codegen/generated/C3.<init>
+2019-12-19 14:38:44 root: INFO: instruction count: 15: is/hail/codegen/generated/C3.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 16: is/hail/codegen/generated/C3.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 14: is/hail/codegen/generated/C3.setPartitionIndex
+2019-12-19 14:38:44 root: INFO: instruction count: 6: is/hail/codegen/generated/C3.addPartitionRegion
+2019-12-19 14:38:44 root: INFO: seqop (Begin)
+2019-12-19 14:38:44 root: INFO: optimize Compile: before: IR size 1: 
+(Begin)
+2019-12-19 14:38:44 root: INFO: optimize Compile: after: IR size 1:
+(Begin)
+2019-12-19 14:38:44 root: INFO: instruction count: 3: is/hail/codegen/generated/C4.<init>
+2019-12-19 14:38:44 root: INFO: instruction count: 15: is/hail/codegen/generated/C4.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 22: is/hail/codegen/generated/C4.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 14: is/hail/codegen/generated/C4.setPartitionIndex
+2019-12-19 14:38:44 root: INFO: instruction count: 6: is/hail/codegen/generated/C4.addPartitionRegion
+2019-12-19 14:38:44 root: INFO: optimize Compile: before: IR size 4: 
+(InsertFields
+  (SelectFields ()
+    (Ref row))
+  None
+  (`<expr>`
+    (I32 -1)))
+2019-12-19 14:38:44 root: INFO: optimize Compile: after: IR size 4:
+(InsertFields
+  (SelectFields ()
+    (Ref row))
+  None
+  (`<expr>`
+    (I32 -1)))
+2019-12-19 14:38:44 root: INFO: instruction count: 3: is/hail/codegen/generated/C5.<init>
+2019-12-19 14:38:44 root: INFO: instruction count: 66: is/hail/codegen/generated/C5.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 28: is/hail/codegen/generated/C5.apply
+2019-12-19 14:38:44 root: INFO: instruction count: 14: is/hail/codegen/generated/C5.setPartitionIndex
+2019-12-19 14:38:44 root: INFO: instruction count: 6: is/hail/codegen/generated/C5.addPartitionRegion
+2019-12-19 14:38:44 SparkContext: INFO: Starting job: runJob at ContextRDD.scala:432
+2019-12-19 14:38:44 DAGScheduler: INFO: Got job 0 (runJob at ContextRDD.scala:432) with 1 output partitions
+2019-12-19 14:38:44 DAGScheduler: INFO: Final stage: ResultStage 0 (runJob at ContextRDD.scala:432)
+2019-12-19 14:38:44 DAGScheduler: INFO: Parents of final stage: List()
+2019-12-19 14:38:44 DAGScheduler: INFO: Missing parents: List()
+2019-12-19 14:38:44 DAGScheduler: INFO: Submitting ResultStage 0 (MapPartitionsRDD[3] at mapPartitionsWithIndex at ContextRDD.scala:280), which has no missing parents
+2019-12-19 14:38:44 MemoryStore: INFO: Block broadcast_0 stored as values in memory (estimated size 7.9 KB, free 366.3 MB)
+2019-12-19 14:38:44 MemoryStore: INFO: Block broadcast_0_piece0 stored as bytes in memory (estimated size 4.7 KB, free 366.3 MB)
+2019-12-19 14:38:44 BlockManagerInfo: INFO: Added broadcast_0_piece0 in memory on 192.168.1.28:64357 (size: 4.7 KB, free: 366.3 MB)
+2019-12-19 14:38:44 SparkContext: INFO: Created broadcast 0 from broadcast at DAGScheduler.scala:1161
+2019-12-19 14:38:44 DAGScheduler: INFO: Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at mapPartitionsWithIndex at ContextRDD.scala:280) (first 15 tasks are for partitions Vector(0))
+2019-12-19 14:38:44 TaskSchedulerImpl: INFO: Adding task set 0.0 with 1 tasks
+2019-12-19 14:38:45 TaskSetManager: INFO: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 7722 bytes)
+2019-12-19 14:38:45 Executor: INFO: Running task 0.0 in stage 0.0 (TID 0)
+2019-12-19 14:38:45 root: INFO: RegionPool: initialized for thread 56: Executor task launch worker for task 0
+2019-12-19 14:38:45 Executor: INFO: Finished task 0.0 in stage 0.0 (TID 0). 666 bytes result sent to driver
+2019-12-19 14:38:45 TaskSetManager: INFO: Finished task 0.0 in stage 0.0 (TID 0) in 98 ms on localhost (executor driver) (1/1)
+2019-12-19 14:38:45 TaskSchedulerImpl: INFO: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2019-12-19 14:38:45 DAGScheduler: INFO: ResultStage 0 (runJob at ContextRDD.scala:432) finished in 0.413 s
+2019-12-19 14:38:45 DAGScheduler: INFO: Job 0 finished: runJob at ContextRDD.scala:432, took 0.471837 s
+2019-12-19 14:38:45 root: INFO: couldn't lower TableMapRows: is.hail.expr.ir.agg.UnsupportedExtraction: no scans to extract in TableMapRows
+2019-12-19 14:38:45 root: INFO: initop (Begin)
+2019-12-19 14:38:45 root: INFO: seqop (Begin)
+2019-12-19 14:38:45 root: INFO: optimize Compile: before: IR size 1: 
+(Begin)
+2019-12-19 14:38:45 root: INFO: optimize Compile: after: IR size 1:
+(Begin)
+2019-12-19 14:38:45 root: INFO: instruction count: 3: is/hail/codegen/generated/C6.<init>
+2019-12-19 14:38:45 root: INFO: instruction count: 15: is/hail/codegen/generated/C6.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 22: is/hail/codegen/generated/C6.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 14: is/hail/codegen/generated/C6.setPartitionIndex
+2019-12-19 14:38:45 root: INFO: instruction count: 6: is/hail/codegen/generated/C6.addPartitionRegion
+2019-12-19 14:38:45 root: INFO: optimize Compile: before: IR size 25: 
+(Let __iruid_160
+  (GetField `<expr>`
+    (Ref row))
+  (InsertFields
+    (SelectFields ()
+      (Ref row))
+    None
+    (`<expr>`
+      (Let __iruid_161
+        (If
+          (IsNA
+            (Ref __iruid_160))
+          (Str "NA")
+          (Apply str String
+            (Ref __iruid_160)))
+        (If
+          (ApplyComparisonOp GT
+            (Apply length Int32
+              (Ref __iruid_161))
+            (I32 90))
+          (Apply `+` String
+            (ApplyIR `[*:*]` String
+              (Ref __iruid_161)
+              (I32 0)
+              (I32 87))
+            (Str "..."))
+          (Ref __iruid_161))))))
+2019-12-19 14:38:45 root: INFO: optimize Compile: after: IR size 25:
+(Let __iruid_234
+  (GetField `<expr>`
+    (Ref row))
+  (InsertFields
+    (SelectFields ()
+      (Ref row))
+    None
+    (`<expr>`
+      (Let __iruid_235
+        (If
+          (IsNA
+            (Ref __iruid_234))
+          (Str "NA")
+          (Apply str String
+            (Ref __iruid_234)))
+        (If
+          (ApplyComparisonOp GT
+            (Apply length Int32
+              (Ref __iruid_235))
+            (I32 90))
+          (Apply `+` String
+            (ApplyIR `[*:*]` String
+              (Ref __iruid_235)
+              (I32 0)
+              (I32 87))
+            (Str "..."))
+          (Ref __iruid_235))))))
+2019-12-19 14:38:45 root: INFO: encoder cache miss (0 hits, 2 misses, 0.000)
+2019-12-19 14:38:45 root: INFO: instruction count: 3: is/hail/codegen/generated/C_etypeEncode_8.<init>
+2019-12-19 14:38:45 root: INFO: instruction count: 7: is/hail/codegen/generated/C_etypeEncode_8.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 11: is/hail/codegen/generated/C_etypeEncode_8.m0_ENCODE_o_tuple_of_o_stringANDo_stringEND_TO_o_struct_of_o_binaryANDo_binaryEND
+2019-12-19 14:38:45 root: INFO: instruction count: 39: is/hail/codegen/generated/C_etypeEncode_8.m1_write_fields_group_0
+2019-12-19 14:38:45 root: INFO: instruction count: 16: is/hail/codegen/generated/C_etypeEncode_8.m2_ENCODE_o_binary_TO_o_binary
+2019-12-19 14:38:45 MemoryStore: INFO: Block broadcast_1 stored as values in memory (estimated size 64.0 B, free 366.3 MB)
+2019-12-19 14:38:45 MemoryStore: INFO: Block broadcast_1_piece0 stored as bytes in memory (estimated size 67.0 B, free 366.3 MB)
+2019-12-19 14:38:45 BlockManagerInfo: INFO: Added broadcast_1_piece0 in memory on 192.168.1.28:64357 (size: 67.0 B, free: 366.3 MB)
+2019-12-19 14:38:45 SparkContext: INFO: Created broadcast 1 from broadcast at SparkBackend.scala:21
+2019-12-19 14:38:45 root: INFO: instruction count: 3: is/hail/codegen/generated/C7.<init>
+2019-12-19 14:38:45 root: INFO: instruction count: 104: is/hail/codegen/generated/C7.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 28: is/hail/codegen/generated/C7.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 178: is/hail/codegen/generated/C7.m1_method
+2019-12-19 14:38:45 root: INFO: instruction count: 42: is/hail/codegen/generated/C7.m2_method
+2019-12-19 14:38:45 root: INFO: instruction count: 33: is/hail/codegen/generated/C7.m3_method
+2019-12-19 14:38:45 root: INFO: instruction count: 8: is/hail/codegen/generated/C7.m4_method
+2019-12-19 14:38:45 root: INFO: instruction count: 29: is/hail/codegen/generated/C7.m5_method
+2019-12-19 14:38:45 root: INFO: instruction count: 581: is/hail/codegen/generated/C7.m6_method
+2019-12-19 14:38:45 root: INFO: instruction count: 8: is/hail/codegen/generated/C7.m7_method
+2019-12-19 14:38:45 root: INFO: instruction count: 33: is/hail/codegen/generated/C7.m8_method
+2019-12-19 14:38:45 root: INFO: instruction count: 37: is/hail/codegen/generated/C7.m9_method
+2019-12-19 14:38:45 root: INFO: instruction count: 26: is/hail/codegen/generated/C7.m10_method
+2019-12-19 14:38:45 root: INFO: instruction count: 14: is/hail/codegen/generated/C7.setPartitionIndex
+2019-12-19 14:38:45 root: INFO: instruction count: 6: is/hail/codegen/generated/C7.addPartitionRegion
+2019-12-19 14:38:45 root: INFO: instruction count: 27: is/hail/codegen/generated/C7.m13_DECODE_o_struct_of_o_binaryANDo_binaryEND_TO_o_tuple_of_o_stringANDo_stringEND
+2019-12-19 14:38:45 root: INFO: instruction count: 53: is/hail/codegen/generated/C7.m14_read_fields_group_0
+2019-12-19 14:38:45 root: INFO: instruction count: 29: is/hail/codegen/generated/C7.m15_INPLACE_DECODE_o_binary_TO_o_binary
+2019-12-19 14:38:45 root: INFO: instruction count: 37: is/hail/codegen/generated/C7.addLiterals
+2019-12-19 14:38:45 root: INFO: encoder cache miss (0 hits, 3 misses, 0.000)
+2019-12-19 14:38:45 root: INFO: instruction count: 3: is/hail/codegen/generated/C_etypeEncode_9.<init>
+2019-12-19 14:38:45 root: INFO: instruction count: 7: is/hail/codegen/generated/C_etypeEncode_9.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 11: is/hail/codegen/generated/C_etypeEncode_9.m0_ENCODE_o_tuple_of_o_stringEND_TO_o_struct_of_o_binaryEND
+2019-12-19 14:38:45 root: INFO: instruction count: 21: is/hail/codegen/generated/C_etypeEncode_9.m1_write_fields_group_0
+2019-12-19 14:38:45 root: INFO: instruction count: 16: is/hail/codegen/generated/C_etypeEncode_9.m2_ENCODE_o_binary_TO_o_binary
+2019-12-19 14:38:45 SparkContext: INFO: Starting job: collect at RVD.scala:676
+2019-12-19 14:38:45 DAGScheduler: INFO: Got job 1 (collect at RVD.scala:676) with 1 output partitions
+2019-12-19 14:38:45 DAGScheduler: INFO: Final stage: ResultStage 1 (collect at RVD.scala:676)
+2019-12-19 14:38:45 DAGScheduler: INFO: Parents of final stage: List()
+2019-12-19 14:38:45 DAGScheduler: INFO: Missing parents: List()
+2019-12-19 14:38:45 DAGScheduler: INFO: Submitting ResultStage 1 (MapPartitionsRDD[9] at mapPartitions at ContextRDD.scala:217), which has no missing parents
+2019-12-19 14:38:45 MemoryStore: INFO: Block broadcast_2 stored as values in memory (estimated size 23.3 KB, free 366.3 MB)
+2019-12-19 14:38:45 MemoryStore: INFO: Block broadcast_2_piece0 stored as bytes in memory (estimated size 12.1 KB, free 366.3 MB)
+2019-12-19 14:38:45 BlockManagerInfo: INFO: Added broadcast_2_piece0 in memory on 192.168.1.28:64357 (size: 12.1 KB, free: 366.3 MB)
+2019-12-19 14:38:45 SparkContext: INFO: Created broadcast 2 from broadcast at DAGScheduler.scala:1161
+2019-12-19 14:38:45 DAGScheduler: INFO: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[9] at mapPartitions at ContextRDD.scala:217) (first 15 tasks are for partitions Vector(0))
+2019-12-19 14:38:45 TaskSchedulerImpl: INFO: Adding task set 1.0 with 1 tasks
+2019-12-19 14:38:45 TaskSetManager: INFO: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 7816 bytes)
+2019-12-19 14:38:45 Executor: INFO: Running task 0.0 in stage 1.0 (TID 1)
+2019-12-19 14:38:45 Executor: INFO: Finished task 0.0 in stage 1.0 (TID 1). 686 bytes result sent to driver
+2019-12-19 14:38:45 TaskSetManager: INFO: Finished task 0.0 in stage 1.0 (TID 1) in 34 ms on localhost (executor driver) (1/1)
+2019-12-19 14:38:45 TaskSchedulerImpl: INFO: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2019-12-19 14:38:45 DAGScheduler: INFO: ResultStage 1 (collect at RVD.scala:676) finished in 0.044 s
+2019-12-19 14:38:45 DAGScheduler: INFO: Job 1 finished: collect at RVD.scala:676, took 0.047893 s
+2019-12-19 14:38:45 root: INFO: decoder cache miss (0 hits, 2 misses, 0.000
+2019-12-19 14:38:45 root: INFO: instruction count: 3: is/hail/codegen/generated/C_etypeDecode_10.<init>
+2019-12-19 14:38:45 root: INFO: instruction count: 7: is/hail/codegen/generated/C_etypeDecode_10.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 27: is/hail/codegen/generated/C_etypeDecode_10.m0_DECODE_o_struct_of_o_binaryEND_TO_o_tuple_of_o_stringEND
+2019-12-19 14:38:45 root: INFO: instruction count: 28: is/hail/codegen/generated/C_etypeDecode_10.m1_read_fields_group_0
+2019-12-19 14:38:45 root: INFO: instruction count: 29: is/hail/codegen/generated/C_etypeDecode_10.m2_INPLACE_DECODE_o_binary_TO_o_binary
+2019-12-19 14:38:45 root: INFO: took 754.822ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InterpretNonCompilable -- LoweringTransformation : 755.685ms, total 909.408ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InterpretNonCompilable -- Verify : 0.185ms, total 909.723ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InterpretNonCompilable : 756.271ms, total 909.827ms, tagged coverage 100.0
+2019-12-19 14:38:45 root: INFO: optimize InterpretNonCompilable, post Lowering: before: IR size 2: 
+(GetField rows
+  (Literal Struct{rows:Array[Struct{`<expr>`:String}],global:Struct{}} <literal value>))
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.206ms, total 910.755ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.217ms, total 911.093ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.022ms, total 911.251ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 0.074ms, total 911.439ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.020ms, total 911.554ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 0.042ms, total 911.688ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.023ms, total 911.801ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.006ms, total 911.896ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.011ms, total 912.003ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 0.044ms, total 912.134ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.016ms, total 912.240ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 0.028ms, total 912.364ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize : 1.972ms, total 912.516ms, tagged coverage 36.0
+2019-12-19 14:38:45 root: INFO: optimize InterpretNonCompilable, post Lowering: after: IR size 1:
+(Literal Array[Struct{`<expr>`:String}] <literal value>)
+2019-12-19 14:38:45 root: INFO: encoder cache miss (0 hits, 4 misses, 0.000)
+2019-12-19 14:38:45 root: INFO: instruction count: 3: is/hail/codegen/generated/C_etypeEncode_12.<init>
+2019-12-19 14:38:45 root: INFO: instruction count: 7: is/hail/codegen/generated/C_etypeEncode_12.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 11: is/hail/codegen/generated/C_etypeEncode_12.m0_ENCODE_o_tuple_of_o_array_of_o_tuple_of_o_stringENDEND_TO_o_struct_of_o_array_of_o_struct_of_o_binaryENDEND
+2019-12-19 14:38:45 root: INFO: instruction count: 21: is/hail/codegen/generated/C_etypeEncode_12.m1_write_fields_group_0
+2019-12-19 14:38:45 root: INFO: instruction count: 76: is/hail/codegen/generated/C_etypeEncode_12.m2_ENCODE_o_array_of_o_tuple_of_o_binaryEND_TO_o_array_of_o_struct_of_o_binaryEND
+2019-12-19 14:38:45 root: INFO: instruction count: 11: is/hail/codegen/generated/C_etypeEncode_12.m3_ENCODE_o_tuple_of_o_binaryEND_TO_o_struct_of_o_binaryEND
+2019-12-19 14:38:45 root: INFO: instruction count: 21: is/hail/codegen/generated/C_etypeEncode_12.m4_write_fields_group_0
+2019-12-19 14:38:45 root: INFO: instruction count: 16: is/hail/codegen/generated/C_etypeEncode_12.m5_ENCODE_o_binary_TO_o_binary
+2019-12-19 14:38:45 MemoryStore: INFO: Block broadcast_3 stored as values in memory (estimated size 64.0 B, free 366.3 MB)
+2019-12-19 14:38:45 MemoryStore: INFO: Block broadcast_3_piece0 stored as bytes in memory (estimated size 66.0 B, free 366.3 MB)
+2019-12-19 14:38:45 BlockManagerInfo: INFO: Added broadcast_3_piece0 in memory on 192.168.1.28:64357 (size: 66.0 B, free: 366.3 MB)
+2019-12-19 14:38:45 SparkContext: INFO: Created broadcast 3 from broadcast at SparkBackend.scala:21
+2019-12-19 14:38:45 root: INFO: instruction count: 3: is/hail/codegen/generated/C11.<init>
+2019-12-19 14:38:45 root: INFO: instruction count: 54: is/hail/codegen/generated/C11.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 10: is/hail/codegen/generated/C11.apply
+2019-12-19 14:38:45 root: INFO: instruction count: 14: is/hail/codegen/generated/C11.setPartitionIndex
+2019-12-19 14:38:45 root: INFO: instruction count: 6: is/hail/codegen/generated/C11.addPartitionRegion
+2019-12-19 14:38:45 root: INFO: instruction count: 27: is/hail/codegen/generated/C11.m3_DECODE_o_struct_of_o_array_of_o_struct_of_o_binaryENDEND_TO_o_tuple_of_o_array_of_o_tuple_of_o_stringENDEND
+2019-12-19 14:38:45 root: INFO: instruction count: 28: is/hail/codegen/generated/C11.m4_read_fields_group_0
+2019-12-19 14:38:45 root: INFO: instruction count: 99: is/hail/codegen/generated/C11.m5_INPLACE_DECODE_o_array_of_o_struct_of_o_binaryEND_TO_o_array_of_o_tuple_of_o_binaryEND
+2019-12-19 14:38:45 root: INFO: instruction count: 21: is/hail/codegen/generated/C11.m6_INPLACE_DECODE_o_struct_of_o_binaryEND_TO_o_tuple_of_o_binaryEND
+2019-12-19 14:38:45 root: INFO: instruction count: 28: is/hail/codegen/generated/C11.m7_read_fields_group_0
+2019-12-19 14:38:45 root: INFO: instruction count: 29: is/hail/codegen/generated/C11.m8_INPLACE_DECODE_o_binary_TO_o_binary
+2019-12-19 14:38:45 root: INFO: instruction count: 30: is/hail/codegen/generated/C11.addLiterals
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Compile : 24.274ms, total 937.291ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InitializeCompiledFunction : 1.052ms, total 938.932ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- RunCompiledFunction : 0.033ms, total 939.291ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- ConvertToSafeValue : 1.304ms, total 940.852ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate : 940.559ms, total 941.031ms, tagged coverage 97.7
+2019-12-19 14:38:45 root: INFO: Timer: all timings:
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 52.243ms, total 57.330ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 1.362ms, total 58.933ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 11.425ms, total 70.546ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 8.200ms, total 79.129ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.325ms, total 79.678ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 12.981ms, total 92.816ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.515ms, total 93.535ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 3.221ms, total 96.909ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 7.524ms, total 104.627ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 2.908ms, total 107.778ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.343ms, total 108.354ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 2.697ms, total 111.237ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.318ms, total 111.826ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.736ms, total 112.721ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.639ms, total 113.508ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 2.879ms, total 116.537ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.639ms, total 117.405ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 2.393ms, total 120.018ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize : 115.115ms, total 120.186ms, tagged coverage 96.7
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- LowerMatrixToTable -- Verify : 0.034ms, total 122.092ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- LowerMatrixToTable -- LoweringTransformation : 0.430ms, total 122.663ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- LowerMatrixToTable -- Verify : 0.062ms, total 122.860ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- LowerMatrixToTable : 0.928ms, total 122.983ms, tagged coverage 56.6
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.165ms, total 124.724ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.757ms, total 125.631ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.581ms, total 126.374ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 2.878ms, total 129.405ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.416ms, total 130.027ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 4.873ms, total 135.098ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.282ms, total 135.590ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.754ms, total 136.473ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.670ms, total 137.445ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 3.722ms, total 141.400ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.281ms, total 141.909ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 2.250ms, total 144.311ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.319ms, total 144.880ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.644ms, total 145.667ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.613ms, total 146.428ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 2.466ms, total 149.029ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.282ms, total 149.484ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 2.149ms, total 151.765ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize : 27.379ms, total 151.931ms, tagged coverage 88.0
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InterpretNonCompilable -- Verify : 0.042ms, total 153.601ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InterpretNonCompilable -- LoweringTransformation : 755.685ms, total 909.408ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InterpretNonCompilable -- Verify : 0.185ms, total 909.723ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InterpretNonCompilable : 756.271ms, total 909.827ms, tagged coverage 100.0
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.206ms, total 910.755ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.217ms, total 911.093ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.022ms, total 911.251ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 0.074ms, total 911.439ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.020ms, total 911.554ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 0.042ms, total 911.688ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- FoldConstants : 0.023ms, total 911.801ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ExtractIntervalFilters : 0.006ms, total 911.896ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- Simplify : 0.011ms, total 912.003ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardLets : 0.044ms, total 912.134ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- ForwardRelationalLets : 0.016ms, total 912.240ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize -- PruneDeadFields : 0.028ms, total 912.364ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Optimize : 1.972ms, total 912.516ms, tagged coverage 36.0
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- Compile : 24.274ms, total 937.291ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- InitializeCompiledFunction : 1.052ms, total 938.932ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- RunCompiledFunction : 0.033ms, total 939.291ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate -- ConvertToSafeValue : 1.304ms, total 940.852ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for CompileAndEvaluate : 940.559ms, total 941.031ms, tagged coverage 97.7
+2019-12-19 14:38:45 root: INFO: Timer: aggregate:
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'RunCompiledFunction' (1): 0.033ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'Verify' (4): 0.323ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'InitializeCompiledFunction' (1): 1.052ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'ConvertToSafeValue' (1): 1.304ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'ForwardRelationalLets' (8): 2.323ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'ExtractIntervalFilters' (8): 7.697ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'Simplify' (8): 21.485ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'ForwardLets' (8): 23.171ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'Compile' (1): 24.274ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'PruneDeadFields' (8): 27.413ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'FoldConstants' (8): 54.071ms
+2019-12-19 14:38:45 root: INFO: Timer: Time taken for tag 'LoweringTransformation' (2): 756.115ms
+2019-12-19 14:38:45 root: INFO: Timer: Fraction covered by a tagged leaf: 24.260ms (97.4%)
+2019-12-19 15:08:07 root: INFO: RegionPool: FREE: 192.0K allocated (192.0K blocks / 0 chunks), thread 56: Executor task launch worker for task 0
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 25
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 44
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 41
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 35
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 37
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 38
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 33
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 43
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 28
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 42
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 27
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 26
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 30
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 45
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 48
+2019-12-19 15:08:07 BlockManagerInfo: INFO: Removed broadcast_2_piece0 on 192.168.1.28:64357 in memory (size: 12.1 KB, free: 366.3 MB)
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 32
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 49
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 50
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 31
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 29
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 46
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 36
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 47
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 34
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 40
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 39
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 23
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 20
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 2
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 21
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 11
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 3
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 15
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 24
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 13
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 22
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 18
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 14
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 12
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 6
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 9
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 7
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 10
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 19
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 17
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 1
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 8
+2019-12-19 15:08:07 BlockManagerInfo: INFO: Removed broadcast_0_piece0 on 192.168.1.28:64357 in memory (size: 4.7 KB, free: 366.3 MB)
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 5
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 16
+2019-12-19 15:08:07 ContextCleaner: INFO: Cleaned accumulator 4
+2019-12-19 16:15:03 SparkContext: INFO: Invoking stop() from shutdown hook
+2019-12-19 16:15:03 AbstractConnector: INFO: Stopped Spark@208c8e09{HTTP/1.1,[http/1.1]}{0.0.0.0:4041}
+2019-12-19 16:15:03 SparkUI: INFO: Stopped Spark web UI at http://192.168.1.28:4041
+2019-12-19 16:15:03 MapOutputTrackerMasterEndpoint: INFO: MapOutputTrackerMasterEndpoint stopped!
+2019-12-19 16:15:03 MemoryStore: INFO: MemoryStore cleared
+2019-12-19 16:15:03 BlockManager: INFO: BlockManager stopped
+2019-12-19 16:15:03 BlockManagerMaster: INFO: BlockManagerMaster stopped
+2019-12-19 16:15:03 OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: INFO: OutputCommitCoordinator stopped!
+2019-12-19 16:15:03 SparkContext: INFO: Successfully stopped SparkContext
+2019-12-19 16:15:03 ShutdownHookManager: INFO: Shutdown hook called
+2019-12-19 16:15:03 ShutdownHookManager: INFO: Deleting directory /private/var/folders/7z/md6hdwyj7tv7dbh014y1wpv00000gn/T/spark-02cd094c-6c92-4ae3-b285-52f337dfbb25/pyspark-b319d3cc-0a17-47d6-aacf-c4cd7aa6144e
+2019-12-19 16:15:03 ShutdownHookManager: INFO: Deleting directory /private/var/folders/7z/md6hdwyj7tv7dbh014y1wpv00000gn/T/spark-65732b11-9465-4a4c-bdc9-90f846ebb15b
+2019-12-19 16:15:03 ShutdownHookManager: INFO: Deleting directory /private/var/folders/7z/md6hdwyj7tv7dbh014y1wpv00000gn/T/spark-02cd094c-6c92-4ae3-b285-52f337dfbb25

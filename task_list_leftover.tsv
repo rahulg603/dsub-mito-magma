@@ -1,0 +1,16 @@
+--env SUMMARY	--env FOLD
+G44.gwas.imputed_v3.both_sexes.tsv	tsk311
+G6_PLANTAR.gwas.imputed_v3.both_sexes.tsv	tsk341
+H7_ECTROPION.gwas.imputed_v3.both_sexes.tsv	tsk396
+I30.gwas.imputed_v3.both_sexes.tsv	tsk483
+K25.gwas.imputed_v3.both_sexes.tsv	tsk653
+K92.gwas.imputed_v3.both_sexes.tsv	tsk693
+L12_URTICA_NAS.gwas.imputed_v3.both_sexes.tsv	tsk744
+M13_ENTESOPATHYNAS.gwas.imputed_v3.both_sexes.tsv	tsk797
+M13_SPINSTENOSIS.gwas.imputed_v3.both_sexes.tsv	tsk847
+M13.gwas.imputed_v3.both_sexes.tsv	tsk857
+M54.gwas.imputed_v3.both_sexes.tsv	tsk880
+M72.gwas.imputed_v3.both_sexes.tsv	tsk888
+N18.gwas.imputed_v3.both_sexes.tsv	tsk912
+R51.gwas.imputed_v3.both_sexes.tsv	tsk1045
+Z36.gwas.imputed_v3.both_sexes.tsv	tsk1174

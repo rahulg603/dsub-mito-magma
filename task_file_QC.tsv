@@ -1,0 +1,6 @@
+--env SUMMARY	--env FOLD
+21001_irnt.gwas.imputed_v3.both_sexes.tsv	tsk1
+4079_irnt.gwas.imputed_v3.both_sexes.tsv	tsk2
+I9_HYPTENS.gwas.imputed_v3.both_sexes.tsv	tsk3
+4080_irnt.gwas.imputed_v3.both_sexes.tsv	tsk4
+E11.gwas.imputed_v3.both_sexes.tsv	tsk5
